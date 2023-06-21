@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fa/css/all.min.css">
+
+    <title>Password</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-password">
+            <div class="body">
+                <div class="infos">
+                    
+                    <input type="text" id="password" value="azea" disabled>
+                    <i id="copy" class="fa fa-copy" aria-hidden="true"></i>
+                    <i id="true" class="fa fa-check" aria-hidden="true" style="color:greenyellow"></i>
+                </div>
+                <div class="form">
+                    <div class="form-group line">
+                        Longueur
+                        <input type="number" id="number" value="azea">
+                    </div>
+                        <div class="form-group line">
+                            Majuscule [A-Z]
+                            <div id="toggle1" class="toggle">
+                                <div id="round1" class="round"></div>
+                            </div>
+                        </div>
+                        <div class="form-group line">
+                            Minuscule [a-z]
+                            <div id="toggle2" class="toggle">
+                                <div id="round2" class="round"></div>
+                            </div>
+                        </div>
+                        <div class="form-group line">
+                            Chiffre [0-9] 
+                            <div id="toggle3" class="toggle">
+                                <div id="round3" class="round"></div>
+                            </div>
+                        </div>
+                        <div class="form-group line">
+                             Caractère spéciaux
+                            <div id="toggle3" class="toggle">
+                                <div id="round3" class="round"></div>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="line">
+                    <input id="generer" class="btn btn-primary" type="button" value="Generer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

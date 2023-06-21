@@ -1,0 +1,143 @@
+:root{
+    --primary: rgb(245, 234, 187);
+    --bg:rebeccapurple;
+    --bgs: rgb(23, 23, 80);
+    --negate:rgb(204, 146, 21);
+}
+
+@font-face {
+    font-family: sablon;
+    src: url("../font/Sablon\ Thin.ttf");
+}
+
+body{
+    background: var(--bg);
+    color: var(--primary);
+    font-family:sablon;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-password{
+    background-color: var(--bgs);
+    width: 300px;
+    height: 350px;
+    border-radius: 0px;
+}
+
+.infos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+i{
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    margin-left: 255px;
+}
+
+
+.form-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    padding-top: 0.5rem;
+    
+}
+
+
+.form{
+    margin-top: 2rem;
+    font-size: large;
+    padding: 0 1rem;
+}
+
+img.profile{
+    width: 20%;
+}
+
+
+#password{
+    position: relative;
+    height: 3rem;
+    border: 3px solid transparent; 
+    width: 100%;
+    letter-spacing: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(227, 227, 233);
+    font-size: 30px;
+    overflow: hidden;
+    padding-right: 3rem;
+    text-overflow: ellipsis;
+    transition: 0.25s;
+    background: rgba(255, 255, 255, 0.25);
+
+}
+
+.line .toggle{
+    border: 1.2px solid var(--primary);
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+.fa.fa-lock{
+    position: absolute;
+    margin-left: 10px;
+}
+
+.toggle .round{
+    background: var(--primary);
+    height: 20px;
+    width: 50%;
+    border-radius: 50px;
+    transition: 0.3s;
+
+}
+.round.true{
+    margin-left : 20px;
+    transition: 0.3s;
+    background-color: rgb(47, 255, 141);
+}
+.btn-primary{
+    position: relative;
+    background-color: var(--negate);
+    color: white;
+    letter-spacing: 1px;
+    border:none;
+    cursor: pointer;
+    padding: 0.7rem 0.7rem;
+    border-radius: 0px 0px 10px 10px;
+    font-weight: bolder;
+    height: 50px;
+    width: 100%;
+    bottom: -35px;
+    margin-top: 1rem;
+    font-size: large;
+}
+
+.stay{
+    position: absolute;
+    margin-left: 60px;
+}
+#number{
+    width: 38px;
+}
+#true{
+    display: none;
+}
